@@ -1,7 +1,7 @@
 //gh
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb+srv://nvrdb:nvrdb@cluster0.rhfstgb.mongodb.net/")
+mongoose.connect("mongodb+srv://thevenkatraju_db_user:3wmW647MdeI0swGO@booksonlinecluster.hoteep4.mongodb.net/")
 .then(() => console.log("database connected successfully"))
 .catch((e) => console.log(e));
 
@@ -27,9 +27,9 @@ async function runQueryExamples() {
     // })
 
     // const newUser = new User({
-    //   name: "venkat raju",
-    //   email: "venkatraju@gmail.com",
-    //   age: "23",
+    //   name: "venkat raju2",
+    //   email: "venkatraju2@gmail.com",
+    //   age: "22",
     //   isActive: true,
     //   tags: ["developer","desijner", "manajer"],
     // })
@@ -39,6 +39,9 @@ async function runQueryExamples() {
     // console.log("Created new user", newUser);
 
     // const c = await User.find({})
+
+
+
 
     const c = await User.find({isActive: true});
 
